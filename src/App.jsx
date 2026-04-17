@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from "react";
-import cardImage from "./assets/hero.png";
+import logoImage from "./assets/logo.jpg";
+import streetOutreachImg from "./assets/street-outreach-program.jpg";
+import backToSchoolImg from "./assets/back-to-school-init.jpg";
+import healthWellnessImg from "./assets/health-and-wellness.jpg";
+import vocationalSkillsImg from "./assets/vocational-skills.jpg";
+import familyReunificationImg from "./assets/reunification.jpg";
+import childRightsImg from "./assets/child-rights-adv.jpg";
+import whoWeAreImg from "./assets/who-we-are.jpg";
 
 const impactStats = [
   {
@@ -247,9 +254,9 @@ const App = () => {
             className="flex items-center gap-3 cursor-pointer"
           >
             <img
-              alt="Street Mentors Network Logo"
-              className="w-10 h-10 rounded-full object-cover"
-              src="https://static.readdy.ai/image/8727c3250015317dea072b3ffdd3c259/6b29a6f0b19968069e7251af2d72f3c2.jpeg"
+              alt="Site logo"
+              className="h-10 object-contain"
+              src={logoImage}
             />
             <span
               className={`font-bold text-lg whitespace-nowrap transition-colors duration-300 text-white`}
@@ -459,18 +466,19 @@ const App = () => {
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8 pt-44 pb-32 flex flex-col items-center text-center">
           <div>
             <img
-              alt="SMN Logo"
-              className="w-20 h-20 rounded-full object-cover border-4 border-[#FFC107] mx-auto mb-6 shadow-lg"
-              src="https://static.readdy.ai/image/8727c3250015317dea072b3ffdd3c259/6b29a6f0b19968069e7251af2d72f3c2.jpeg"
+              alt="Site logo"
+              className="h-20 object-contain border-4 border-[#FFC107] mx-auto mb-6 shadow-lg"
+              src={logoImage}
             />
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6 max-w-4xl">
-            Break The Silence.{" "}
-            <span className="text-[#FFC107]">Heal</span> The Future
+            Break The Silence. <span className="text-[#FFC107]">Heal</span> The
+            Future
           </h1>
           <p className="text-lg md:text-xl text-white/85 max-w-2xl mb-10 leading-relaxed">
-           We are shaping mentally healthy children and youths by breaking the cycle of child abuse, drug abuse, and neglect in Nigeria.
+            We are shaping mentally healthy children and youths by breaking the
+            cycle of child abuse, drug abuse, and neglect in Nigeria.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button
@@ -497,9 +505,9 @@ const App = () => {
               <div className="relative">
                 <div className="w-full h-[420px] rounded-3xl overflow-hidden">
                   <img
-                    alt="SMN community work"
+                    alt="Who we are"
                     className="w-full h-full object-cover object-top"
-                    src={cardImage}
+                    src={whoWeAreImg}
                   />
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-[#1A3A52] text-white rounded-2xl px-6 py-4">
@@ -526,10 +534,21 @@ const App = () => {
                 Hope.
               </h2>
               <p className="text-gray-600 text-base leading-relaxed mb-4">
-               Break The Silence Initiative Nigeria is more than just an NGO—we are a safe harbor for vulnerable children and youths. Operating from the heart of Akoka, Lagos, we exist to confront the uncomfortable truths that society often ignores: the rising crises of child abuse and drug addiction.
+                Break The Silence Initiative Nigeria is more than just an NGO—we
+                are a safe harbor for vulnerable children and youths. Operating
+                from the heart of Akoka, Lagos, we exist to confront the
+                uncomfortable truths that society often ignores: the rising
+                crises of child abuse and drug addiction.
               </p>
               <p className="text-gray-600 text-base leading-relaxed mb-8">
-                We are a team of advocates, counselors, and protectors who believe that no child should suffer in silence. Through preventive education, direct counseling, and child protection services, we go into schools and communities to catch the signs early. We don't just react to trauma; we work tirelessly to prevent it. By empowering vulnerable children with knowledge and emotional support, we are building a generation that is mentally resilient, informed, and unafraid to speak up.
+                We are a team of advocates, counselors, and protectors who
+                believe that no child should suffer in silence. Through
+                preventive education, direct counseling, and child protection
+                services, we go into schools and communities to catch the signs
+                early. We don't just react to trauma; we work tirelessly to
+                prevent it. By empowering vulnerable children with knowledge and
+                emotional support, we are building a generation that is mentally
+                resilient, informed, and unafraid to speak up.
               </p>
               <div className="flex flex-wrap gap-3 mb-8">
                 <span className="bg-[#1A3A52]/8 text-[#1A3A52] text-sm font-medium px-4 py-1.5 rounded-full border border-[#1A3A52]/15">
@@ -719,42 +738,42 @@ const App = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                img: cardImage,
+                img: streetOutreachImg,
                 tag: "Outreach",
                 tagColor: "bg-[#FFC107] text-[#1A3A52]",
                 title: "Street Outreach Program",
                 desc: "Our frontline teams go directly to the streets to identify, engage, and support vulnerable children — providing immediate care and connecting them to our services.",
               },
               {
-                img: cardImage,
+                img: backToSchoolImg,
                 tag: "Education",
                 tagColor: "bg-[#4CAF50] text-white",
                 title: "Back-to-School Initiative",
                 desc: "We reintegrate street children into formal education by providing school supplies, uniforms, tuition support, and ongoing mentorship to ensure they stay in school.",
               },
               {
-                img: cardImage,
+                img: healthWellnessImg,
                 tag: "Healthcare",
                 tagColor: "bg-[#1A3A52] text-white",
                 title: "Health & Wellness Clinics",
                 desc: "Regular mobile health clinics bring medical care, vaccinations, nutritional support, and psychosocial counseling directly to children and their families.",
               },
               {
-                img: cardImage,
+                img: vocationalSkillsImg,
                 tag: "Empowerment",
                 tagColor: "bg-[#FFC107] text-[#1A3A52]",
                 title: "Vocational Skills Training",
                 desc: "Older youth receive hands-on training in trades like tailoring, carpentry, and digital skills — empowering them to become self-sufficient and economically independent.",
               },
               {
-                img: cardImage,
+                img: familyReunificationImg,
                 tag: "Family",
                 tagColor: "bg-[#4CAF50] text-white",
                 title: "Family Reunification",
                 desc: "We work to safely reunite street children with their families through counseling, mediation, and follow-up support to ensure lasting, stable home environments.",
               },
               {
-                img: cardImage,
+                img: childRightsImg,
                 tag: "Advocacy",
                 tagColor: "bg-[#1A3A52] text-white",
                 title: "Child Rights Advocacy",
@@ -1034,8 +1053,6 @@ const App = () => {
                   referrerPolicy="no-referrer-when-downgrade"
                   style={{ border: 0 }}
                 ></iframe>
-
-              
               </div>
             </div>
           </div>
@@ -1049,17 +1066,15 @@ const App = () => {
             <div className="lg:col-span-1">
               <div className="flex items-center gap-3 mb-4">
                 <img
-                  alt="SMN Logo"
-                  className="w-12 h-12 rounded-full object-cover border-2 border-[#FFC107]"
-                  src="https://static.readdy.ai/image/8727c3250015317dea072b3ffdd3c259/6b29a6f0b19968069e7251af2d72f3c2.jpeg"
+                  alt="Site logo"
+                  className="h-12 object-contain border-2 border-[#FFC107]"
+                  src={logoImage}
                 />
                 <div>
                   <div className="font-bold text-base leading-tight">
                     Break The Silence Initiative
                   </div>
-                  <div className="font-bold text-base leading-tight text-[#FFC107]">
-                   
-                  </div>
+                  <div className="font-bold text-base leading-tight text-[#FFC107]"></div>
                 </div>
               </div>
               <p className="text-white/60 text-sm leading-relaxed mb-5">
@@ -1280,7 +1295,7 @@ const App = () => {
                     href="tel:+2348137964331"
                     className="text-white/60 text-sm hover:text-[#FFC107] transition-colors"
                   >
-                  09060022887
+                    09060022887
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
@@ -1301,7 +1316,7 @@ const App = () => {
         <div className="border-t border-white/10">
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
             <p className="text-white/40 text-xs text-center sm:text-left">
-              © 2026 Break The Silence Initiative. All rights reserved. 
+              © 2026 Break The Silence Initiative. All rights reserved.
               non-profit organization.
             </p>
             <p className="text-white/40 text-xs text-center sm:text-right">
